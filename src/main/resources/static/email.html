@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Template</title>
+  <style>
+
+        .jumbotron{
+            width: 100%;
+            text-align: center;
+            min-height: 20rem;
+            background: #f4f4f4;
+            position: relative;
+            top: 5rem;
+            border-collapse: collapse;
+            border: 0;
+            border-spacing: 0;
+        }
+
+        table, td, div, h1, p {font-family: Arial, sans-serif;}
+
+        p, h1{
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        td{
+          padding-top:10px;
+          padding-bottom:10px;
+          margin:0;
+        }
+
+        .btn{
+            padding: 1rem 1.4rem;
+            background: rgb(87, 113, 228);
+            border-radius: 3px;
+            position: relative;
+            top: 1.5rem;
+            color: #ffffff;
+        }
+
+        tr{
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .jumbotron{
+               height: 25rem;
+            }
+
+            .btn{
+                width: 80%;
+                background: rgb(87, 113, 228);
+                border-radius: 3px;
+            }
+
+          }
+    </style>
+</head>
+<body>
+<div style="line-height:10px;height:10px;mso-line-height-rule:exactly;">&nbsp;</div>
+<table role="presentation" class="jumbotron bg-light">
+  <tr class="row-1">
+    <td>
+      <h1>Hello, world!</h1>
+    </td>
+  </tr>
+  <tr class="row-2">
+    <td>
+      <p class="lead">
+        Hi, this was sent by AWS SKD for java from Carlos's home computer.
+      </p>
+      <hr class="my-4" />
+    </td>
+  </tr>
+  <tr class="row-3">
+    <td>
+      <p>
+        Hi <PARAM>,
+
+        This email was sent through Amazon SES SDK for Java.
+
+        Best Regards,
+
+        Carlos
+      </p>
+    </td>
+  </tr>
+  <tr class="row-4">
+    <td>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button" style= "text-decoration: none; color: #fff; margin-top: 1rem;" >Learn more</a>
+      </p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
